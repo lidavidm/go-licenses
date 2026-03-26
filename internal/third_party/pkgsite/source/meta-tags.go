@@ -11,7 +11,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/lidavidm/go-licenses/v2/internal/third_party/pkgsite/derrors"
+	"github.com/lidavidm/go-licenses/internal/third_party/pkgsite/derrors"
 )
 
 // This code adapted from https://go.googlesource.com/gddo/+/refs/heads/master/gosrc/gosrc.go.
