@@ -18,6 +18,7 @@ import (
 	"context"
 	"fmt"
 	"go/build"
+	"path"
 	"path/filepath"
 	"sort"
 	"strings"
@@ -423,7 +424,13 @@ func isStdLib(pkg *packages.Package) bool {
 	if !strings.HasSuffix(prefix, sep) {
 		prefix += sep
 	}
-	return strings.HasPrefix(pkg.GoFiles[0], prefix)
+
+	gopath := path.Join(build.Default.GOPATH, "pkg", "mod", "golang.org")
+	if !strings.HasSuffix(gopath, sep) {
+		gopath += sep
+	}
+
+	return strings.HasPrefix(pkg.GoFiles[0], prefix) || strings.HasPrefix(pkg.GoFiles[0], gopath)
 }
 
 // isTestBinary returns true iff pkg is a test binary.
