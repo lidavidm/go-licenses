@@ -1,4 +1,4 @@
-module github.com/google/go-licenses/v2
+module github.com/lidavidm/go-licenses/v2
 
 go 1.25.0
 

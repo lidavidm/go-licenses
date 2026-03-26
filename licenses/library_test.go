@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/google/go-licenses/v2/internal/third_party/pkgsite/source"
+	"github.com/lidavidm/go-licenses/v2/internal/third_party/pkgsite/source"
 )
 
 func TestLibraries(t *testing.T) {

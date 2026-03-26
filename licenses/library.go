@@ -23,7 +23,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/google/go-licenses/v2/internal/third_party/pkgsite/source"
+	"github.com/lidavidm/go-licenses/v2/internal/third_party/pkgsite/source"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/tools/go/packages"
 	"k8s.io/klog/v2"
